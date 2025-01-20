@@ -1,0 +1,27 @@
+[package]
+name = "logout"
+version = "0.1.0"
+edition = "2024"
+authors = ["Tim"]
+description = "Tiny library providing simple interface for writing logs to output."
+readme = "README.md"
+licence = "AGPL-3.0-or-later"
+
+[dependencies]
+log = {version = "0.4.22", "features" = ["std"]}
+time = { version = "0.3.37", features = ["formatting", "parsing", "local-offset"] }
+
+[lints.rust]
+unsafe_code = "forbid"
+missing_debug_implementations = "deny"
+#missing_docs = "deny"
+trivial_casts = "deny"
+trivial_numeric_casts = "deny"
+unused_extern_crates = "deny"
+unused_import_braces = "deny"
+unused_qualifications = "deny"
+unused_results = "deny"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
